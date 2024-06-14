@@ -1,0 +1,24 @@
+database escola
+
+table alunos
+
+column id_aluno *int* (auto-incr)
+column nome_aluno *varchar* (100)
+column data_nascimento *datetime*
+column rg *varchar* (14)
+column telefone *varchar* (14)
+column email *varchar* (150)
+column responsavel *varchar* (100)
+column endereco *varchar* (255)
+column observacao *varchar* (255)
+
+tabela cursos
+
+column id_curso *int* (auto-incr)
+column nome_curso *varchar* (100)
+column duracao *int*
+column vagas *int*
+column periodo *varchar* (50)
+column modalidade *varchar* (50)
+column valor *money*
+column observacao *varchar* (255)

@@ -1,0 +1,65 @@
+database empresa_limpeza
+
+
+table produtos
+
+column id_produto *int* (auto-incr) | prim
+column nome_produto *varchar* (255)
+column nome_fornecedor *varchar* (100)
+column quantidade_produto *int*
+column categoria_produto *varchar* (100)
+column valor_produto *money*
+column status_produto *varchar* (50)
+
+
+table clientes
+
+column id_cliente *int* (auto-incr) | prim
+column genero_cliente *varchar* (50)
+column nome_cliente *varchar* (255)
+column endereco_cliente *varchar* (255)
+column nascimento_cliente *date*
+column cpf_cliente *varchar* (15)
+column telefone_cliente *varchar* (15)
+column email_cliente *varchar* (100)
+
+
+table vendas
+
+column id_venda *int* (auto-incr) | prim
+column data_venda *datetime*
+column id_cliente *int* (auto-incr)
+column quantidade_venda *int*
+column total_venda *money*
+
+
+table funcionarios
+
+column id_funcionario *int* (auto-incr) | prim
+column genero_funcionario *varchar* (50)
+column nome_funcionario *varchar* (255)
+column cargo_funcionario *varchar* (100)
+column setor_funcionario *varchar* (100)
+column admissao_funcionario *date*
+column cpf_funcionario *varchar* (15)
+column telefone_funcionario *varchar* (15)
+column email_funcionario *varchar* (100)
+column salario_funcionario *money*
+
+
+table estoque
+
+column id_produto *int* (auto-incr) | prim
+column nome_produto *varchar* (255)
+column nome_fornecedor *varchar* (255)
+column quantidade_estoque *int*
+column categoria_produto *varchar* (255)
+
+
+table fornecedores
+
+column id_fornecedor *int* (auto-incr) | prim
+column nome_fornecedor *varchar* (100)
+column categoria_fornecedor *varchar* (50)
+column telefone_fornecedor *varchar* (15)
+column email_fornecedor *varchar* (100)

@@ -1,0 +1,397 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil MS Sans Serif;}{\f1\fnil\fcharset0 MS Sans Serif;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\b\f0\fs16 001 - Entidade: \cf2\b0 AG\f1\'caNCIA\cf1\b 
+\par \cf0\b0\f0 1. **numero_agencia**:
+\par    - Tipo de Dado: INT (ou outro tipo de dado num\f1\'e9rico dependendo da estrutura do banco de dados)
+\par    - Descri\'e7\'e3o: Um identificador \'fanico para cada ag\'eancia registrada.
+\par    - Restri\'e7\'f5es: Deve ser \'fanico para cada registro na tabela.
+\par    - Exemplo: 1234
+\par 
+\par 2. **cidade**:
+\par    - Tipo de Dado: VARCHAR
+\par    - Descri\'e7\'e3o: O nome da cidade onde a ag\'eancia est\'e1 localizada.
+\par    - Restri\'e7\'f5es: Pode incluir letras, espa\'e7os e caracteres especiais.
+\par    - Exemplo: "S\'e3o Paulo"
+\par 
+\par 3. **endereco**:
+\par    - Tipo de Dado: VARCHAR
+\par    - Descri\'e7\'e3o: O endere\'e7o f\'edsico da ag\'eancia.
+\par    - Restri\'e7\'f5es: Pode incluir n\'fameros, letras, espa\'e7os e caracteres especiais.
+\par    - Exemplo: "Rua A, 123"
+\par 
+\par 4. **contato**:
+\par    - Tipo de Dado: VARCHAR
+\par    - Descri\'e7\'e3o: As informa\'e7\'f5es de contato da ag\'eancia, como n\'famero de telefone ou e-mail.
+\par    - Restri\'e7\'f5es: Pode incluir n\'fameros, letras, espa\'e7os e caracteres especiais.
+\par    - Exemplo: "+55 (11) 1234-5678"
+\par 
+\par 5. **estado**:
+\par    - Tipo de Dado: VARCHAR
+\par    - Descri\'e7\'e3o: O estado ou prov\'edncia onde a ag\'eancia est\'e1 localizada.
+\par    - Restri\'e7\'f5es: Pode incluir letras, espa\'e7os e caracteres especiais.
+\par    - Exemplo: "S\'e3o Paulo"
+\par \f0 
+\par \cf1\b 002 - Entidade: \cf2\b0 CARRO\cf1\b 
+\par \cf0\b0 1. **id_carro**:
+\par    - Tipo de Dado: INT (ou outro tipo de dado num\f1\'e9rico dependendo da estrutura do banco de dados)
+\par    - Descri\'e7\'e3o: Um identificador \'fanico para cada carro registrado.
+\par    - Restri\'e7\'f5es: Deve ser \'fanico para cada registro na tabela.
+\par    - Exemplo: 123
+\par 
+\par 2. **placa**:
+\par    - Tipo de Dado: VARCHAR
+\par    - Descri\'e7\'e3o: A placa do carro.
+\par    - Restri\'e7\'f5es: Pode incluir letras, n\'fameros e caracteres especiais.
+\par    - Exemplo: "ABC1234"
+\par 
+\par 3. **modelo**:
+\par    - Tipo de Dado: VARCHAR
+\par    - Descri\'e7\'e3o: O modelo do carro.
+\par    - Restri\'e7\'f5es: Pode incluir letras, n\'fameros, espa\'e7os e caracteres especiais.
+\par    - Exemplo: "Gol"
+\par 
+\par 4. **ano**:
+\par    - Tipo de Dado: INT
+\par    - Descri\'e7\'e3o: O ano de fabrica\'e7\'e3o do carro.
+\par    - Restri\'e7\'f5es: Deve ser um n\'famero inteiro positivo.
+\par    - Exemplo: 2020
+\par 
+\par 5. **numero_agencia**:
+\par    - Tipo de Dado: INT (ou outro tipo de dado num\'e9rico dependendo da estrutura do banco de dados)
+\par    - Descri\'e7\'e3o: O n\'famero da ag\'eancia associada ao carro.
+\par    - Restri\'e7\'f5es: Pode variar dependendo da estrutura de ag\'eancias na aplica\'e7\'e3o.
+\par    - Exemplo: 456
+\par 
+\par 6. **disponibilidade**:
+\par    - Tipo de Dado: BOOLEAN, VARCHAR ou ENUM
+\par    - Descri\'e7\'e3o: Indica se o carro est\'e1 dispon\'edvel para loca\'e7\'e3o ou n\'e3o.
+\par    - Restri\'e7\'f5es: Pode ser representado como "Dispon\'edvel" ou "Indispon\'edvel", ou utilizando um tipo de dado booleano como TRUE/FALSE.
+\par    - Exemplo: "Dispon\'edvel" ou TRUE
+\par \f0 
+\par \cf1\b 003 - Entidade: \cf2\b0 CLIENTES\cf1\b 
+\par \cf0\b0 1. **email**:
+\par    - Tipo de Dado: VARCHAR
+\par    - Descri\f1\'e7\'e3o: O endere\'e7o de e-mail do cliente.
+\par    - Restri\'e7\'f5es: Deve seguir o formato de e-mail padr\'e3o (ex: example@email.com).
+\par    - Exemplo: "joao@example.com"
+\par 
+\par 2. **cnh**:
+\par    - Tipo de Dado: VARCHAR ou NUM\'c9RICO
+\par    - Descri\'e7\'e3o: O n\'famero da Carteira Nacional de Habilita\'e7\'e3o (CNH) do cliente.
+\par    - Restri\'e7\'f5es: Deve ser \'fanico para cada cliente e seguir o formato espec\'edfico da CNH.
+\par    - Exemplo: "12345678901"
+\par 
+\par 3. **nome**:
+\par    - Tipo de Dado: VARCHAR
+\par    - Descri\'e7\'e3o: O nome completo do cliente.
+\par    - Restri\'e7\'f5es: Pode incluir letras, espa\'e7os e caracteres especiais.
+\par    - Exemplo: "Jo\'e3o da Silva"
+\par 
+\par 4. **cartao**:
+\par    - Tipo de Dado: VARCHAR ou NUM\'c9RICO
+\par    - Descri\'e7\'e3o: O n\'famero do cart\'e3o de cr\'e9dito/d\'e9bito do cliente.
+\par    - Restri\'e7\'f5es: Deve ser \'fanico para cada cliente e seguir o formato do n\'famero de cart\'e3o de cr\'e9dito.
+\par    - Exemplo: "1234 5678 9012 3456"
+\par 
+\par 5. **telefone**:
+\par    - Tipo de Dado: VARCHAR ou NUM\'c9RICO
+\par    - Descri\'e7\'e3o: O n\'famero de telefone do cliente.
+\par    - Restri\'e7\'f5es: Pode incluir n\'fameros, espa\'e7os e caracteres especiais.
+\par    - Exemplo: "+55 (11) 1234-5678"
+\par 
+\par 6. **endereco**:
+\par    - Tipo de Dado: VARCHAR
+\par    - Descri\'e7\'e3o: O endere\'e7o f\'edsico do cliente.
+\par    - Restri\'e7\'f5es: Pode incluir n\'fameros, letras, espa\'e7os e caracteres especiais.
+\par    - Exemplo: "Rua A, 123, Apartamento 101"
+\par 
+\par 7. **cidade**:
+\par    - Tipo de Dado: VARCHAR
+\par    - Descri\'e7\'e3o: A cidade onde o cliente reside.
+\par    - Restri\'e7\'f5es: Pode incluir letras, espa\'e7os e caracteres especiais.
+\par    - Exemplo: "S\'e3o Paulo"
+\par 
+\par 8. **estado**:
+\par    - Tipo de Dado: VARCHAR
+\par    - Descri\'e7\'e3o: O estado ou prov\'edncia onde o cliente reside.
+\par    - Restri\'e7\'f5es: Pode incluir letras, espa\'e7os e caracteres especiais.
+\par    - Exemplo: "SP"
+\par \f0 
+\par \cf1\b 004 - Rela\f1\'e7\'e3o: \cf2\b0 ENVIA\cf1\b 
+\par \cf0\b0\f0 1. **id_envio**:
+\par    - Tipo de Dado: INT (ou outro tipo de dado num\f1\'e9rico dependendo da estrutura do banco de dados)
+\par    - Descri\'e7\'e3o: Um identificador \'fanico para cada envio registrado.
+\par    - Restri\'e7\'f5es: Deve ser \'fanico para cada registro na tabela.
+\par    - Exemplo: 54321
+\par 
+\par 2. **observacao**:
+\par    - Tipo de Dado: VARCHAR ou TEXT
+\par    - Descri\'e7\'e3o: Qualquer observa\'e7\'e3o relevante associada ao envio.
+\par    - Restri\'e7\'f5es: Pode incluir letras, n\'fameros, espa\'e7os e caracteres especiais.
+\par    - Exemplo: "Cliente solicitou entrega expressa"
+\par \f0 
+\par \cf1\b 005 - Entidade: \cf2\b0 FEEDBACK\cf1\b 
+\par \cf0\b0 1. **id_feedback**:
+\par    - Tipo de Dado: INT (ou outro tipo de dado num\f1\'e9rico dependendo da estrutura do banco de dados)
+\par    - Descri\'e7\'e3o: Um identificador \'fanico para cada feedback registrado.
+\par    - Restri\'e7\'f5es: Deve ser \'fanico para cada registro na tabela.
+\par    - Exemplo: 1234
+\par 
+\par 2. **avaliacao**:
+\par    - Tipo de Dado: INT (ou outro tipo de dado num\'e9rico dependendo da escala de avalia\'e7\'e3o)
+\par    - Descri\'e7\'e3o: A avalia\'e7\'e3o atribu\'edda pelo cliente ao servi\'e7o, produto, ou experi\'eancia.
+\par    - Restri\'e7\'f5es: Pode variar dependendo da escala de avalia\'e7\'e3o utilizada (por exemplo, de 1 a 5 estrelas).
+\par    - Exemplo: 4 (para uma escala de 1 a 5 estrelas)
+\par 
+\par 3. **data_feedback**:
+\par    - Tipo de Dado: DATE ou DATETIME
+\par    - Descri\'e7\'e3o: A data em que o feedback foi fornecido pelo cliente.
+\par    - Restri\'e7\'f5es: Deve seguir o formato de data padr\'e3o do banco de dados.
+\par    - Exemplo: "2024-05-03" (para DATE) ou "2024-05-03 10:30:00" (para DATETIME)
+\par 
+\par 4. **comentario**:
+\par    - Tipo de Dado: VARCHAR ou TEXT
+\par    - Descri\'e7\'e3o: Um coment\'e1rio adicional ou explica\'e7\'e3o fornecido pelo cliente junto com sua avalia\'e7\'e3o.
+\par    - Restri\'e7\'f5es: Pode incluir letras, n\'fameros, espa\'e7os e caracteres especiais.
+\par    - Exemplo: "\'d3timo atendimento ao cliente, muito satisfeito com a compra."
+\par \f0 
+\par \cf1\b 006 - Entidade: \cf2\b0 FUNCION\f1\'c1RIO\cf1\b 
+\par \cf0\b0\f0 1. **id_funcionario**:
+\par    - Tipo de Dado: INT (ou outro tipo de dado num\f1\'e9rico dependendo da estrutura do banco de dados)
+\par    - Descri\'e7\'e3o: Um identificador \'fanico para cada funcion\'e1rio registrado.
+\par    - Restri\'e7\'f5es: Deve ser \'fanico para cada registro na tabela.
+\par    - Exemplo: 7890
+\par 
+\par 2. **nome**:
+\par    - Tipo de Dado: VARCHAR
+\par    - Descri\'e7\'e3o: O nome completo do funcion\'e1rio.
+\par    - Restri\'e7\'f5es: Pode incluir letras, espa\'e7os e caracteres especiais.
+\par    - Exemplo: "Ana Silva"
+\par 
+\par 3. **data_contratacao**:
+\par    - Tipo de Dado: DATE ou DATETIME
+\par    - Descri\'e7\'e3o: A data em que o funcion\'e1rio foi contratado.
+\par    - Restri\'e7\'f5es: Deve seguir o formato de data padr\'e3o do banco de dados.
+\par    - Exemplo: "2022-01-15" (para DATE) ou "2022-01-15 09:00:00" (para DATETIME)
+\par 
+\par 4. **salario**:
+\par    - Tipo de Dado: DECIMAL ou FLOAT (ou outro tipo de dado num\'e9rico dependendo da precis\'e3o necess\'e1ria)
+\par    - Descri\'e7\'e3o: O sal\'e1rio do funcion\'e1rio.
+\par    - Restri\'e7\'f5es: Pode incluir valores decimais e positivos.
+\par    - Exemplo: 3000.00
+\par 
+\par 5. **cargo**:
+\par    - Tipo de Dado: VARCHAR
+\par    - Descri\'e7\'e3o: O cargo ocupado pelo funcion\'e1rio na empresa.
+\par    - Restri\'e7\'f5es: Pode incluir letras, espa\'e7os e caracteres especiais.
+\par    - Exemplo: "Gerente de Vendas"
+\par \f0 
+\par \cf1\b 007 - Rela\f1\'e7\'e3o: \cf2\b0 LOCA\'c7\'c3O\cf1\b 
+\par \cf0\b0\f0 1. **id_locacao**:
+\par    - Tipo de Dado: INT (ou outro tipo de dado num\f1\'e9rico dependendo da estrutura do banco de dados)
+\par    - Descri\'e7\'e3o: Um identificador \'fanico para cada loca\'e7\'e3o registrada.
+\par    - Restri\'e7\'f5es: Deve ser \'fanico para cada registro na tabela.
+\par    - Exemplo: 9876
+\par 
+\par 2. **data_locacao**:
+\par    - Tipo de Dado: DATE ou DATETIME
+\par    - Descri\'e7\'e3o: A data em que o carro foi alugado.
+\par    - Restri\'e7\'f5es: Deve seguir o formato de data padr\'e3o do banco de dados.
+\par    - Exemplo: "2024-05-03" (para DATE) ou "2024-05-03 10:30:00" (para DATETIME)
+\par 
+\par 3. **data_devolucao**:
+\par    - Tipo de Dado: DATE ou DATETIME
+\par    - Descri\'e7\'e3o: A data em que o carro foi devolvido ap\'f3s a loca\'e7\'e3o.
+\par    - Restri\'e7\'f5es: Deve seguir o formato de data padr\'e3o do banco de dados.
+\par    - Exemplo: "2024-05-10" (para DATE) ou "2024-05-10 10:30:00" (para DATETIME)
+\par 
+\par 4. **valor_total**:
+\par    - Tipo de Dado: DECIMAL ou FLOAT (ou outro tipo de dado num\'e9rico dependendo da precis\'e3o necess\'e1ria)
+\par    - Descri\'e7\'e3o: O valor total cobrado pela loca\'e7\'e3o do carro.
+\par    - Restri\'e7\'f5es: Pode incluir valores decimais e positivos ou negativos, dependendo do contexto.
+\par    - Exemplo: 500.00
+\par \f0 
+\par \cf1\b 008 - Entidade: \cf2\b0 MANUTEN\f1\'c7\'c3O\cf1\b 
+\par \cf0\b0\f0 1. **id_manutencao**:
+\par    - Tipo de Dado: INT (ou outro tipo de dado num\f1\'e9rico dependendo da estrutura do banco de dados)
+\par    - Descri\'e7\'e3o: Um identificador \'fanico para cada registro de manuten\'e7\'e3o.
+\par    - Restri\'e7\'f5es: Deve ser \'fanico para cada registro na tabela.
+\par    - Exemplo: 5678
+\par 
+\par 2. **descricao**:
+\par    - Tipo de Dado: VARCHAR ou TEXT
+\par    - Descri\'e7\'e3o: Uma descri\'e7\'e3o detalhada da manuten\'e7\'e3o realizada.
+\par    - Restri\'e7\'f5es: Pode incluir letras, n\'fameros, espa\'e7os e caracteres especiais.
+\par    - Exemplo: "Troca de \'f3leo e filtros, verifica\'e7\'e3o de freios."
+\par 
+\par 3. **km**:
+\par    - Tipo de Dado: INT (ou outro tipo de dado num\'e9rico dependendo da unidade de medida)
+\par    - Descri\'e7\'e3o: O od\'f4metro da quilometragem registrada na \'e9poca da manuten\'e7\'e3o.
+\par    - Restri\'e7\'f5es: Pode variar dependendo da unidade de medida utilizada (por exemplo, quil\'f4metros).
+\par    - Exemplo: 50000
+\par 
+\par 4. **tipo_manutencao**:
+\par    - Tipo de Dado: VARCHAR
+\par    - Descri\'e7\'e3o: O tipo de manuten\'e7\'e3o realizada, como preventiva, corretiva, troca de pe\'e7as, etc.
+\par    - Restri\'e7\'f5es: Pode incluir letras, espa\'e7os e caracteres especiais.
+\par    - Exemplo: "Preventiva"
+\par 
+\par 5. **custo**:
+\par    - Tipo de Dado: DECIMAL ou FLOAT (ou outro tipo de dado num\'e9rico dependendo da precis\'e3o necess\'e1ria)
+\par    - Descri\'e7\'e3o: O custo total da manuten\'e7\'e3o realizada.
+\par    - Restri\'e7\'f5es: Pode incluir valores decimais e positivos ou negativos, dependendo do contexto.
+\par    - Exemplo: 250.00
+\par 
+\par 6. **data_manutencao**:
+\par    - Tipo de Dado: DATE ou DATETIME
+\par    - Descri\'e7\'e3o: A data em que a manuten\'e7\'e3o foi realizada.
+\par    - Restri\'e7\'f5es: Deve seguir o formato de data padr\'e3o do banco de dados.
+\par    - Exemplo: "2024-05-03" (para DATE) ou "2024-05-03 10:30:00" (para DATETIME)
+\par \f0 
+\par \cf1\b 009 - Entidade: \cf2\b0 PAGAMENTO\cf1\b 
+\par \cf0\b0 1. **id_pagamento**:
+\par    - Tipo de Dado: INT (ou outro tipo de dado num\f1\'e9rico dependendo da estrutura do banco de dados)
+\par    - Descri\'e7\'e3o: Um identificador \'fanico para cada pagamento registrado.
+\par    - Restri\'e7\'f5es: Deve ser \'fanico para cada registro na tabela.
+\par    - Exemplo: 9876
+\par 
+\par 2. **data_pagamento**:
+\par    - Tipo de Dado: DATE ou DATETIME
+\par    - Descri\'e7\'e3o: A data em que o pagamento foi realizado.
+\par    - Restri\'e7\'f5es: Deve seguir o formato de data padr\'e3o do banco de dados.
+\par    - Exemplo: "2024-05-03" (para DATE) ou "2024-05-03 10:30:00" (para DATETIME)
+\par 
+\par 3. **forma_pagamento**:
+\par    - Tipo de Dado: VARCHAR
+\par    - Descri\'e7\'e3o: A forma de pagamento utilizada, como cart\'e3o de cr\'e9dito, dinheiro, transfer\'eancia banc\'e1ria, etc.
+\par    - Restri\'e7\'f5es: Pode incluir letras, espa\'e7os e caracteres especiais.
+\par    - Exemplo: "Cart\'e3o de Cr\'e9dito"
+\par 
+\par 4. **status_pagamento**:
+\par    - Tipo de Dado: VARCHAR
+\par    - Descri\'e7\'e3o: O status atual do pagamento, como "Pendente", "Conclu\'eddo", "Cancelado", etc.
+\par    - Restri\'e7\'f5es: Pode incluir letras, espa\'e7os e caracteres especiais.
+\par    - Exemplo: "Conclu\'eddo"
+\par 
+\par 5. **valor**:
+\par    - Tipo de Dado: DECIMAL ou FLOAT (ou outro tipo de dado num\'e9rico dependendo da precis\'e3o necess\'e1ria)
+\par    - Descri\'e7\'e3o: O valor do pagamento realizado.
+\par    - Restri\'e7\'f5es: Pode incluir valores decimais e positivos ou negativos, dependendo do contexto.
+\par    - Exemplo: 100.50
+\par \f0 
+\par \cf1\b 010 - Rela\f1\'e7\'e3o: \cf2\b0 REALIZA\cf1\b 
+\par \cf0\b0\f0 1. **id_comprovante**:
+\par    - Tipo de Dado: INT (ou outro tipo de dado num\f1\'e9rico dependendo da estrutura do banco de dados)
+\par    - Descri\'e7\'e3o: Um identificador \'fanico para cada comprovante de realiza\'e7\'e3o de alguma transa\'e7\'e3o ou servi\'e7o.
+\par    - Restri\'e7\'f5es: Deve ser \'fanico para cada registro na tabela.
+\par    - Exemplo: 12345
+\par 
+\par 2. **comprovante**:
+\par    - Tipo de Dado: BLOB (Binary Large Object), VARCHAR (se o comprovante for armazenado como texto), ou outro tipo dependendo do formato do comprovante
+\par    - Descri\'e7\'e3o: O comprovante da transa\'e7\'e3o ou servi\'e7o realizado. Isso pode ser um arquivo digitalizado, uma imagem, ou um texto, dependendo do contexto da aplica\'e7\'e3o.
+\par    - Restri\'e7\'f5es: Pode variar dependendo do tamanho m\'e1ximo permitido para armazenamento de dados no banco de dados.
+\par    - Exemplo: (um arquivo de imagem ou PDF representando o comprovante)
+\par \f0 
+\par \cf1\b 011 - Rela\f1\'e7\'e3o: \cf2\b0 RECEBE\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 012 - Rela\f1\'e7\'e3o: \cf2\b0 VERIFICA\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 013 - Atributo: \cf2\b0 ano\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 014 - Atributo: \cf2\b0 avaliacao\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 015 - Atributo: \cf2\b0 cargo\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 016 - Atributo: \cf2\b0 cartao\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 017 - Atributo: \cf2\b0 cidade\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 018 - Atributo: \cf2\b0 cidade\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 019 - Atributo: \cf2\b0 cnh\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 020 - Atributo: \cf2\b0 comentario\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 021 - Atributo: \cf2\b0 comprovante\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 022 - Atributo: \cf2\b0 contato\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 023 - Atributo: \cf2\b0 custo\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 024 - Atributo: \cf2\b0 data_contratacao\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 025 - Atributo: \cf2\b0 data_devolucao\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 026 - Atributo: \cf2\b0 data_feedback\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 027 - Atributo: \cf2\b0 data_locacao\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 028 - Atributo: \cf2\b0 data_manutencao\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 029 - Atributo: \cf2\b0 data_pagamento\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 030 - Atributo: \cf2\b0 descricao\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 031 - Atributo: \cf2\b0 disponibilidade\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 032 - Atributo: \cf2\b0 email\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 033 - Atributo: \cf2\b0 endereco\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 034 - Atributo: \cf2\b0 endereco\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 035 - Atributo: \cf2\b0 estado\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 036 - Atributo: \cf2\b0 estado\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 037 - Atributo: \cf2\b0 forma_pagamento\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 038 - Atributo: \cf2\b0 id_carro\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 039 - Atributo: \cf2\b0 id_cliente\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 040 - Atributo: \cf2\b0 id_comprovante\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 041 - Atributo: \cf2\b0 id_envio\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 042 - Atributo: \cf2\b0 id_feedback\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 043 - Atributo: \cf2\b0 id_funcionario\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 044 - Atributo: \cf2\b0 id_locacao\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 045 - Atributo: \cf2\b0 id_manutencao\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 046 - Atributo: \cf2\b0 id_pagamento\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 047 - Atributo: \cf2\b0 km\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 048 - Atributo: \cf2\b0 modelo\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 049 - Atributo: \cf2\b0 nome\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 050 - Atributo: \cf2\b0 nome\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 051 - Atributo: \cf2\b0 numero_agencia\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 052 - Atributo: \cf2\b0 numero_agencia\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 053 - Atributo: \cf2\b0 observacao\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 054 - Atributo: \cf2\b0 placa\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 055 - Atributo: \cf2\b0 salario\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 056 - Atributo: \cf2\b0 status_pagamento\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 057 - Atributo: \cf2\b0 telefone\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 058 - Atributo: \cf2\b0 tipo_manutencao\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 059 - Atributo: \cf2\b0 valor\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 060 - Atributo: \cf2\b0 valor_total\cf1\b 
+\par \cf0\b0 
+\par 
+\par }
+ 
